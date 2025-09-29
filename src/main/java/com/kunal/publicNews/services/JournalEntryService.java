@@ -50,8 +50,9 @@ public class JournalEntryService {
     }
 
     // delete content using id
-    public void deleteById(ObjectId id){
+    public JournalEntry deleteById(ObjectId id){
         journalEntryRepository.deleteById(id);
+        return null;
     }
 
 }
